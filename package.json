@@ -1,5 +1,6 @@
 {
   "name": "teaching-react-app",
+  "homepage": "https://abiyogaaron.github.io/teaching-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
