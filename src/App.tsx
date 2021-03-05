@@ -37,7 +37,8 @@ class App extends React.Component<IAppProps, IAppState> {
   }
 
   public toggleShowTable = () => {
-    this.setState({showTable: false});
+    const { showTable } = this.state;
+    this.setState({showTable: !showTable});
   }
 
   public renderRow = () => {
