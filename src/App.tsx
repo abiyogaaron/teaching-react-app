@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import Footercard from './components/footerCard';
 import './App.css';
 
 const App = () => {
@@ -30,9 +31,9 @@ const App = () => {
     setIsActive(false);
     setTimer(0);
   }
-
+  console.log("timer: ", timer);
   const formatTime = () => {
-    const centiSeconds = `0${(timer % 100)}`.slice(-2)
+    const centiSeconds = `0${timer % 100}`.slice(-2)
     const seconds = `0${Math.floor(timer / 100) % 60}`.slice(-2)
     const minutes = `0${Math.floor(timer / 6000) % 60}`.slice(-2)
 
@@ -67,6 +68,7 @@ const App = () => {
           {formatTime()}
         </div> 
         {renderingBtn()}
+        {/* <Footercard name="Abiyoga" /> */}
       </div>
     </div>
   )
