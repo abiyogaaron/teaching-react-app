@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header, Icon, Container, Menu, Segment, Sidebar, Dropdown } from 'semantic-ui-react'
+import APIService from './service';
 import 'semantic-ui-css/semantic.min.css'
 import './App.css';
 
@@ -13,6 +14,11 @@ class App extends React.Component<{}, IAppState> {
     this.state = {
       showSidebar: false,
     }
+  }
+
+  componentDidMount() {
+    const response = APIService.request('GET');
+    console.log(response)
   }
 
   public toggleSidebar = () => {
