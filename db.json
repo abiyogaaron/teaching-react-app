@@ -1,56 +1,60 @@
-[{
-  "id": 1,
-  "first_name": "Teador",
-  "last_name": "Orrick",
-  "email": "torrick0@usatoday.com",
-  "phone_number": "+855-221-595-7573",
-  "gender": "Genderqueer",
-  "city": "Kratié",
-  "street_address": "08 Tennessee Way",
-  "credit_card_type": "americanexpress",
-  "credit_card_no": "341308495804408"
-}, {
-  "id": 2,
-  "first_name": "Gaye",
-  "last_name": "Broadley",
-  "email": "gbroadley1@upenn.edu",
-  "phone_number": "+86-249-141-9876",
-  "gender": "Female",
-  "city": "Choujiang",
-  "street_address": "85 Ryan Alley",
-  "credit_card_type": "diners-club-carte-blanche",
-  "credit_card_no": "30096484566148"
-}, {
-  "id": 3,
-  "first_name": "Osbert",
-  "last_name": "Rampton",
-  "email": "orampton2@google.com.au",
-  "phone_number": "+86-240-231-2178",
-  "gender": "Genderqueer",
-  "city": "Chunhua",
-  "street_address": "22146 Shoshone Pass",
-  "credit_card_type": "jcb",
-  "credit_card_no": "3588905547485338"
-}, {
-  "id": 4,
-  "first_name": "Elana",
-  "last_name": "Clayworth",
-  "email": "eclayworth3@rediff.com",
-  "phone_number": "+86-217-958-5466",
-  "gender": "Genderfluid",
-  "city": "Layu",
-  "street_address": "674 Chive Trail",
-  "credit_card_type": "visa",
-  "credit_card_no": "4041373711356661"
-}, {
-  "id": 5,
-  "first_name": "Hazel",
-  "last_name": "Artist",
-  "email": "hartist4@xing.com",
-  "phone_number": "+86-819-523-1118",
-  "gender": "Agender",
-  "city": "Sihai",
-  "street_address": "1 Gulseth Hill",
-  "credit_card_type": "bankcard",
-  "credit_card_no": "5602232049594500"
-}]
+{
+  "users":[
+    {
+      "id": 1,
+      "first_name": "Teador",
+      "last_name": "Orrick",
+      "email": "torrick0@usatoday.com",
+      "phone_number": "+855-221-595-7573",
+      "gender": "Genderqueer",
+      "city": "Kratié",
+      "street_address": "08 Tennessee Way",
+      "credit_card_type": "americanexpress",
+      "credit_card_no": "341308495804408"
+    }, {
+      "id": 2,
+      "first_name": "Gaye",
+      "last_name": "Broadley",
+      "email": "gbroadley1@upenn.edu",
+      "phone_number": "+86-249-141-9876",
+      "gender": "Female",
+      "city": "Choujiang",
+      "street_address": "85 Ryan Alley",
+      "credit_card_type": "diners-club-carte-blanche",
+      "credit_card_no": "30096484566148"
+    }, {
+      "id": 3,
+      "first_name": "Osbert",
+      "last_name": "Rampton",
+      "email": "orampton2@google.com.au",
+      "phone_number": "+86-240-231-2178",
+      "gender": "Genderqueer",
+      "city": "Chunhua",
+      "street_address": "22146 Shoshone Pass",
+      "credit_card_type": "jcb",
+      "credit_card_no": "3588905547485338"
+    }, {
+      "id": 4,
+      "first_name": "Elana",
+      "last_name": "Clayworth",
+      "email": "eclayworth3@rediff.com",
+      "phone_number": "+86-217-958-5466",
+      "gender": "Genderfluid",
+      "city": "Layu",
+      "street_address": "674 Chive Trail",
+      "credit_card_type": "visa",
+      "credit_card_no": "4041373711356661"
+    }, {
+      "id": 5,
+      "first_name": "Hazel",
+      "last_name": "Artist",
+      "email": "hartist4@xing.com",
+      "phone_number": "+86-819-523-1118",
+      "gender": "Agender",
+      "city": "Sihai",
+      "street_address": "1 Gulseth Hill",
+      "credit_card_type": "bankcard",
+      "credit_card_no": "5602232049594500"
+    }
+  ]
+}
