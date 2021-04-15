@@ -1,0 +1,111 @@
+[{
+  "id": 1,
+  "first_name": "Teador",
+  "last_name": "Orrick",
+  "email": "torrick0@usatoday.com",
+  "phone_number": "+855-221-595-7573",
+  "gender": "Genderqueer",
+  "city": "Kratié",
+  "street_address": "08 Tennessee Way",
+  "credit_card_type": "americanexpress",
+  "credit_card_no": "341308495804408"
+}, {
+  "id": 2,
+  "first_name": "Gaye",
+  "last_name": "Broadley",
+  "email": "gbroadley1@upenn.edu",
+  "phone_number": "+86-249-141-9876",
+  "gender": "Female",
+  "city": "Choujiang",
+  "street_address": "85 Ryan Alley",
+  "credit_card_type": "diners-club-carte-blanche",
+  "credit_card_no": "30096484566148"
+}, {
+  "id": 3,
+  "first_name": "Osbert",
+  "last_name": "Rampton",
+  "email": "orampton2@google.com.au",
+  "phone_number": "+86-240-231-2178",
+  "gender": "Genderqueer",
+  "city": "Chunhua",
+  "street_address": "22146 Shoshone Pass",
+  "credit_card_type": "jcb",
+  "credit_card_no": "3588905547485338"
+}, {
+  "id": 4,
+  "first_name": "Elana",
+  "last_name": "Clayworth",
+  "email": "eclayworth3@rediff.com",
+  "phone_number": "+86-217-958-5466",
+  "gender": "Genderfluid",
+  "city": "Layu",
+  "street_address": "674 Chive Trail",
+  "credit_card_type": "visa",
+  "credit_card_no": "4041373711356661"
+}, {
+  "id": 5,
+  "first_name": "Ursuline",
+  "last_name": "Massinger",
+  "email": "umassinger4@4shared.com",
+  "phone_number": "+84-696-579-1589",
+  "gender": "Genderfluid",
+  "city": "Duyên Hải",
+  "street_address": "035 Lunder Park",
+  "credit_card_type": "jcb",
+  "credit_card_no": "3551974998013315"
+}, {
+  "id": 6,
+  "first_name": "Sheffield",
+  "last_name": "Tonepohl",
+  "email": "stonepohl5@cmu.edu",
+  "phone_number": "+7-816-699-3657",
+  "gender": "Male",
+  "city": "Korfovskiy",
+  "street_address": "6 Valley Edge Trail",
+  "credit_card_type": "visa-electron",
+  "credit_card_no": "4405470593532847"
+}, {
+  "id": 7,
+  "first_name": "Lynda",
+  "last_name": "Saphin",
+  "email": "lsaphin6@t-online.de",
+  "phone_number": "+66-899-384-7822",
+  "gender": "Bigender",
+  "city": "Non Sila",
+  "street_address": "134 New Castle Park",
+  "credit_card_type": "jcb",
+  "credit_card_no": "3533068545630102"
+}, {
+  "id": 8,
+  "first_name": "Daven",
+  "last_name": "Jefferd",
+  "email": "djefferd7@fema.gov",
+  "phone_number": "+7-269-236-6768",
+  "gender": "Male",
+  "city": "Berezniki",
+  "street_address": "0 Utah Trail",
+  "credit_card_type": "visa-electron",
+  "credit_card_no": "4508315450124855"
+}, {
+  "id": 9,
+  "first_name": "Mimi",
+  "last_name": "Lammerding",
+  "email": "mlammerding8@networksolutions.com",
+  "phone_number": "+385-797-779-5680",
+  "gender": "Female",
+  "city": "Tisno",
+  "street_address": "9417 Jackson Pass",
+  "credit_card_type": "maestro",
+  "credit_card_no": "060452689637792471"
+}, {
+  "id": 10,
+  "first_name": "Berna",
+  "last_name": "Montgomery",
+  "email": "bmontgomery9@fda.gov",
+  "phone_number": "+46-834-786-3639",
+  "gender": "Bigender",
+  "city": "Grästorp",
+  "street_address": "02653 Sommers Crossing",
+  "credit_card_type": "jcb",
+  "credit_card_no": "3550691143212243"
+}]
