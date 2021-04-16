@@ -1,11 +1,14 @@
 import React from 'react';
-import { Header, Icon, Container, Menu, Segment, Sidebar, Dropdown } from 'semantic-ui-react'
+import { Header, Icon, Container, Menu, Segment, Sidebar, Dropdown, Table } from 'semantic-ui-react'
 import APIService from './service';
 import 'semantic-ui-css/semantic.min.css'
 import './App.css';
+import { IGETUsersResponse } from './interface';
 
 interface IAppState {
   showSidebar: boolean;
+  isLoading: boolean;
+  users: any;
 }
 
 class App extends React.Component<{}, IAppState> {
@@ -13,12 +16,23 @@ class App extends React.Component<{}, IAppState> {
     super(props);
     this.state = {
       showSidebar: false,
+      isLoading: false,
+      users: [],
     }
   }
 
   componentDidMount() {
-    const response = APIService.request('GET');
-    console.log(response)
+    this.setState({isLoading: true})
+    APIService.request('GET', 'users')
+      .then(res => {
+        this.setState({users: res})
+      })
+      .catch(err => {
+        console.log(err);
+      })
+      .finally(() => {
+        this.setState({isLoading: false})
+      })
   }
 
   public toggleSidebar = () => {
@@ -31,8 +45,30 @@ class App extends React.Component<{}, IAppState> {
     }
   }
 
+  public renderUsers = () => {
+    const { users } = this.state;
+    return users.map((user: IGETUsersResponse) => {
+      return (
+        <Table.Row key={user.id}>
+          <Table.Cell>
+            {user.id}
+          </Table.Cell>
+          <Table.Cell>
+            {`${user.first_name} ${user.last_name}`}
+          </Table.Cell>
+          <Table.Cell>
+            {`${user.email}`}
+          </Table.Cell>
+          <Table.Cell>
+            {`${user.city} ${user.street_address}`}
+          </Table.Cell>
+        </Table.Row>
+      )
+    })
+  }
+
   public render() {
-    const { showSidebar } = this.state;
+    const { showSidebar, isLoading } = this.state;
     return (
       <Sidebar.Pushable as={Segment} className="app-wrapper">
         <Sidebar
@@ -83,8 +119,24 @@ class App extends React.Component<{}, IAppState> {
             </Container>
           </Menu>
           <Container>
-            <Segment>
+            <Segment loading={isLoading}>
               <Header as='h3'>Application Content</Header>
+
+              <Table celled>
+                <Table.Header>
+                  <Table.Row>
+                    <Table.HeaderCell>Id</Table.HeaderCell>
+                    <Table.HeaderCell>Full name</Table.HeaderCell>
+                    <Table.HeaderCell>Email</Table.HeaderCell>
+                    <Table.HeaderCell>Address</Table.HeaderCell>
+                  </Table.Row>
+                </Table.Header>
+
+                <Table.Body>
+                  {this.renderUsers()}
+                </Table.Body>
+              </Table>
+
             </Segment>
           </Container>
         </Sidebar.Pusher>
