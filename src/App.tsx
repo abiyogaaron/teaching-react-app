@@ -16,7 +16,7 @@ class App extends React.Component<RouteComponentProps> {
       <Switch>
         <Route 
           exact
-          path={'/'}
+          path={'/teaching-react-app/'}
           render={() => (
             <BigWrapper {...this.props}>
               <UsersPage />
@@ -25,7 +25,7 @@ class App extends React.Component<RouteComponentProps> {
         />
         <Route 
           exact
-          path={'/new'}
+          path={'/teaching-react-app/new'}
           render={() => (
             <BigWrapper {...this.props}>
               <UsersConfigPage {...this.props} />

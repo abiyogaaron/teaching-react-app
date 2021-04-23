@@ -65,7 +65,6 @@ class UsersConfigPage extends React.PureComponent<IUsersConfigPageProps, IUsersC
       .then(res => {
         if (res) {
           alert("new user succesfully added !")
-          this.props.history.push('/');
         }
       })
       .catch(err => {
