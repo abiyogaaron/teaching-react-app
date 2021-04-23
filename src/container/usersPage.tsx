@@ -59,7 +59,7 @@ class UsersPage extends React.PureComponent<{}, IUsersPageState> {
     return (
       <Segment loading={isLoading}>
         <Header as='h3'>Application Content</Header>
-        <Button color="teal" as={Link} to="/new">
+        <Button color="teal" as={Link} to="/teaching-react-app/new">
           New Users
         </Button>
         <Table celled>
