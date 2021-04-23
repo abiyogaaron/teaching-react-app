@@ -33,28 +33,6 @@
       "street_address": "22146 Shoshone Pass",
       "credit_card_type": "jcb",
       "credit_card_no": "3588905547485338"
-    }, {
-      "id": 4,
-      "first_name": "Elana",
-      "last_name": "Clayworth",
-      "email": "eclayworth3@rediff.com",
-      "phone_number": "+86-217-958-5466",
-      "gender": "Genderfluid",
-      "city": "Layu",
-      "street_address": "674 Chive Trail",
-      "credit_card_type": "visa",
-      "credit_card_no": "4041373711356661"
-    }, {
-      "id": 5,
-      "first_name": "Hazel",
-      "last_name": "Artist",
-      "email": "hartist4@xing.com",
-      "phone_number": "+86-819-523-1118",
-      "gender": "Agender",
-      "city": "Sihai",
-      "street_address": "1 Gulseth Hill",
-      "credit_card_type": "bankcard",
-      "credit_card_no": "5602232049594500"
     }
   ]
 }
