@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/teaching-react-app/static/css/main.67479666.chunk.css",
-    "main.js": "/teaching-react-app/static/js/main.09e3c42f.chunk.js",
-    "main.js.map": "/teaching-react-app/static/js/main.09e3c42f.chunk.js.map",
-    "runtime-main.js": "/teaching-react-app/static/js/runtime-main.b2322100.js",
-    "runtime-main.js.map": "/teaching-react-app/static/js/runtime-main.b2322100.js.map",
+    "main.js": "/teaching-react-app/static/js/main.52521649.chunk.js",
+    "main.js.map": "/teaching-react-app/static/js/main.52521649.chunk.js.map",
+    "runtime-main.js": "/teaching-react-app/static/js/runtime-main.bc51483e.js",
+    "runtime-main.js.map": "/teaching-react-app/static/js/runtime-main.bc51483e.js.map",
     "static/css/2.bc223ffd.chunk.css": "/teaching-react-app/static/css/2.bc223ffd.chunk.css",
-    "static/js/2.06c452e8.chunk.js": "/teaching-react-app/static/js/2.06c452e8.chunk.js",
-    "static/js/2.06c452e8.chunk.js.map": "/teaching-react-app/static/js/2.06c452e8.chunk.js.map",
-    "static/js/3.a42c884d.chunk.js": "/teaching-react-app/static/js/3.a42c884d.chunk.js",
-    "static/js/3.a42c884d.chunk.js.map": "/teaching-react-app/static/js/3.a42c884d.chunk.js.map",
+    "static/js/2.396f4982.chunk.js": "/teaching-react-app/static/js/2.396f4982.chunk.js",
+    "static/js/2.396f4982.chunk.js.map": "/teaching-react-app/static/js/2.396f4982.chunk.js.map",
+    "static/js/3.381435da.chunk.js": "/teaching-react-app/static/js/3.381435da.chunk.js",
+    "static/js/3.381435da.chunk.js.map": "/teaching-react-app/static/js/3.381435da.chunk.js.map",
     "index.html": "/teaching-react-app/index.html",
     "static/css/2.bc223ffd.chunk.css.map": "/teaching-react-app/static/css/2.bc223ffd.chunk.css.map",
     "static/css/main.67479666.chunk.css.map": "/teaching-react-app/static/css/main.67479666.chunk.css.map",
-    "static/js/2.06c452e8.chunk.js.LICENSE.txt": "/teaching-react-app/static/js/2.06c452e8.chunk.js.LICENSE.txt",
+    "static/js/2.396f4982.chunk.js.LICENSE.txt": "/teaching-react-app/static/js/2.396f4982.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/teaching-react-app/static/media/outline-icons.ddae9b1b.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.b2322100.js",
+    "static/js/runtime-main.bc51483e.js",
     "static/css/2.bc223ffd.chunk.css",
-    "static/js/2.06c452e8.chunk.js",
+    "static/js/2.396f4982.chunk.js",
     "static/css/main.67479666.chunk.css",
-    "static/js/main.09e3c42f.chunk.js"
+    "static/js/main.52521649.chunk.js"
   ]
 }
