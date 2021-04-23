@@ -12,3 +12,12 @@ export interface IGETUsersResponse {
   credit_card_no: string;
   credit_card_type: string;
 }
+
+export type TGENDER = 'male' | 'female';
+
+export enum ECREDIT_CARD_TYPE {
+  AMERICAN_EXPRESS = 'americanexpress',
+  VISA = 'visa',
+  JCB = 'jcb',
+  DINERS_CLUB = 'diners-club-carte-blanche',
+}
