@@ -5,7 +5,7 @@ import { GENDER_OPT, CREDIT_CARD_TYPE } from '../constants';
 import { TGENDER, ECREDIT_CARD_TYPE } from '../interface';
 import APIService from '../service';
 
-interface IUsersConfigPageProps extends RouteComponentProps {
+interface IUsersConfigPageProps extends RouteComponentProps{
 
 }
 
@@ -60,8 +60,10 @@ class UsersConfigPage extends React.PureComponent<IUsersConfigPageProps, IUsersC
   };
 
   public handleSubmit = () => {
+    const { users } = this.state;
+    
     this.setState({isLoading: true})
-    APIService.request('POST', 'users', this.state.users)
+    APIService.request('POST', 'users', users)
       .then(res => {
         if (res) {
           alert("new user succesfully added !")

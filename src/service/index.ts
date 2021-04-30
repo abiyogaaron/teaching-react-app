@@ -1,4 +1,3 @@
-import { rejects } from 'node:assert';
 import { HTTPMethod } from '../interface';
 
 const BASE_URL = 'https://my-json-server.typicode.com/abiyogaaron/teaching-react-app/'
