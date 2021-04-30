@@ -1,40 +1,36 @@
 import React from 'react';
 import { Table, Segment, Header, Button } from 'semantic-ui-react';
-import APIService from '../service';
-import { IGETUsersResponse } from '../interface';
 import { Link } from 'react-router-dom';
-
-interface IUsersPageState {
-  users: any;
-  isLoading: boolean;
+import { connect } from 'react-redux';
+import { IUsersPageState, IAppState } from '../interface/state';
+import { IGETUsersResponse } from '../interface';
+import {
+  resetStateData,
+  getUsers,
+} from '../redux/action/userPageAction';
+ 
+interface IUserPageProps {
+  usersPage: IUsersPageState;
+  resetStateData(): void;
+  getUsers(): void;
 }
 
-class UsersPage extends React.PureComponent<{}, IUsersPageState> {
+class UsersPage extends React.PureComponent<IUserPageProps> {
   constructor(props) {
     super(props);
-    this.state = {
-      isLoading: false,
-      users: [],
-    }
   }
 
   componentDidMount() {
-    this.setState({isLoading: true})
-    APIService.request('GET', 'users')
-      .then(res => {
-        this.setState({users: res})
-      })
-      .catch(err => {
-        console.log(err);
-      })
-      .finally(() => {
-        this.setState({isLoading: false})
-      })
+    this.props.getUsers()
+  }
+
+  componentWillUnmount() {
+    this.props.resetStateData();
   }
 
   public renderUsers = () => {
-    const { users } = this.state;
-    return users.map((user: IGETUsersResponse) => {
+    const { data } = this.props.usersPage;
+    return data.map((user: IGETUsersResponse) => {
       return (
         <Table.Row key={user.id}>
           <Table.Cell>
@@ -55,7 +51,7 @@ class UsersPage extends React.PureComponent<{}, IUsersPageState> {
   }
 
   public render() {
-    const { isLoading } = this.state;
+    const { isLoading } = this.props.usersPage;
     return (
       <Segment loading={isLoading}>
         <Header as='h3'>Application Content</Header>
@@ -81,4 +77,16 @@ class UsersPage extends React.PureComponent<{}, IUsersPageState> {
   }
 }
 
-export default UsersPage;
+const mapStateToProps = ({ usersPage }: IAppState) => ({
+  usersPage,
+});
+
+const mapDispatchToProps = {
+  resetStateData,
+  getUsers,
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(UsersPage);
